@@ -1,0 +1,153 @@
+
+*{
+  font-family: 'Roboto', sans-serif;   
+  margin:0px;
+  padding:0px;
+  box-sizing:border-box;
+}
+a {
+  font-family: 'Roboto', sans-serif;
+  color: #00B7FF;
+}
+.form3{
+  width: 50%;
+  margin-left: 25%;
+  margin-bottom: 5em;
+}
+.upm{
+  padding-right: 5em;
+}
+.columna{
+  height:850px;
+  color:black;
+  background-color: black;
+  background-image: url(../images/Sin-título-2.png);
+  background-size: 100%;
+  text-align: center;
+}
+.columna > h1{
+  margin-top: 600px;
+  width:100%;
+  background-color: rgba(255, 255, 255, 0.09);
+  padding:0px;
+}
+.blu{
+  padding: 0%;
+  text-decoration: none;
+  color: dark;
+}
+a{
+  color:black;
+  
+}
+.nav-item{
+  padding-top:1em;
+}
+.logo{
+/* padding-top:1em;*/
+}
+a:hover{
+  color:darkgreen;
+  text-decoration: none;
+}
+.a15{
+  background-color:aqua;
+}
+.sic{
+  background-color: black ;
+  background-size: 100% ;
+  color:white;
+  text-shadow: 1px 1px 1px black;
+  font-size: 16px;
+  height: 800px;
+}
+.sec{
+  background-color: black ;
+  background-image: url(../images/uno.jpg);
+  background-size: 100% ;
+  color:white;
+  text-shadow: 1px 1px 1px black;
+  font-size: 16px;
+  height: 800px;
+}
+.unoi{
+  margin-top:2em;
+  text-align: center;
+}
+.uno> h1{
+  margin-top:2em;
+  text-align: center;
+  margin-bottom:5em;
+}
+.sec> h1{
+  margin-top:4em;
+  text-align: center
+}
+.sec> h2{
+  margin-top:4em;
+  width: 50%;
+  margin-left:25%;
+  text-align: center
+}
+.sec>p{
+  width: 50%;
+  margin-left:25%;
+  text-align: center
+}
+.sac{
+  height: 800px;
+}
+.text-me{
+  margin-top:100px;
+}
+.text-me> h2{
+  margin-top:3em;
+  }
+.hcard{
+  height:600px;
+  display:flex;
+  justify-content: center;
+  background-color:none;
+}
+.hcardit{
+  height:600px;
+  display:flex;
+  justify-content: center;
+  background-color:none;
+}
+.cardp{
+  margin-top: 8em;
+  margin-bottom: 5em;
+  background-color:none;
+  height:500px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(151, 151, 151);
+}
+.hcard1{
+  width:100%;
+  display:flex;
+  justify-content: center;
+  background-color:none;
+}
+.sap-e{
+  color: black;
+  padding-top: 200px;
+}
+.card{
+  margin-top: 8em;
+  margin-bottom: 5em;
+  background-color:none;
+  height: 60%;
+}
+.text-me  p{
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 5em;
+}
+.footer{
+  height: 50px;
+}
+.cont{
+  min-height: calc(100vh - 50px - 88px);
+}

@@ -1,0 +1,85 @@
+<div class="cont">
+<div class="container-fluid mt-5">
+    <div class="row text-center ">
+        <div class="col-md-12">
+            <h1>C.R.U.D</h1>
+        </div>
+    </div>
+    <div class="row">
+    <div class="col-md-6 ">
+            <form action="/users/new" class="form3" method="POST">
+            <div class="form-grup">
+                <input type="email" class="form-control" name="email" placeholder="email"></imput>
+            </div>
+            <div class="form-grup">
+                <input type="password" class="form-control" name="password" placeholder="password"></imput>
+            </div>
+            <div class="form-group">
+                    <label>Selecciona el role</label>
+                    <select class="form-control" name="role"> 
+                        {{#each roles}}
+                            <option value="{{id_role}}">{{detail}}</option>
+                        {{/each}}
+                    </select>
+            </div>
+            <button type="submit" class="btn btn-success btn-block">Nuevo usuario</button>    
+            </form>
+        </div>
+        <div class="col-md-6">
+
+        {{#if user }}
+                    <div class="form3">
+                        <div class="form-grup">
+                                <input type="email" class="form-control" value="{{user.email}}" id="email" placeholder="email"></imput>
+                        </div>
+
+                        <div class="form-grup">
+                                <input type="password" class="form-control" value="{{user.password}}" id="password" placeholder="password"></imput>
+                        </div>
+
+                        <div class="form-group">
+                                <label>Selecciona el role</label>
+                                <select class="form-control" id="role">
+                                    <option value="{{user.role}}" selected="selected" >{{user.detail}} </option>
+                                    {{#each roles}} 
+                                        <option value="{{id_role}}">{{detail}}</option>
+                                    {{/each}}
+                                </select>
+                        </div>
+                        <button type="button" class="btn btn-primary" onclick="updateUser({{user.id_user}})" > Actualizar </button>
+                    </div>
+        {{/if}}
+        </div>
+        </div>
+    <div class="row justify-content-center mt-3">
+        <div class="col-md-12">
+                <table class="table table-dark text-center">
+                    <thead>
+                        <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">email</th>
+                        <th scope="col">password</th>
+                        <th scope="col">role</th>
+                        <th scope="col">actions</th>
+                        </tr>
+                    </thead>
+                        <tbody>
+                            {{#each users}}
+                            <tr>
+                            <th scope="row">{{id_user}} </th>
+                            <td>{{email}} </td>
+                            <td>{{password}} </td>
+                            <td>{{role}} </td>
+                            <td>
+                                <a href="/users/{{id_user}}" class="btn btn-info">seleccionar</a>
+                                <button type="button" onclick="deleteUser({{id_user}})" class="btn btn-danger">eliminar</button>
+                            </td>
+                            </tr>
+                            {{/each}}
+                        </tbody>
+                </table>
+        </div>
+     
+    </div>
+</div>
+</div>
