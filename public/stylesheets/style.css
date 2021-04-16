@@ -22,7 +22,7 @@ a {
   color:aliceblue;
   background-color: black;
   background-image: url(../images/arb.jpg);
-  background-size: 100%;
+  background-size: 150%;
   text-align: center;
 }
 .columna > h1{
@@ -69,8 +69,8 @@ a:hover{
 }
 .sec{
   background-color: black ;
-  background-image: url(../images/camflo1.jpg);
-  background-size: 100% ;
+  background-image: url(../images/camflo.jpg);
+  background-size: 110% ;
   color:white;
   text-shadow: 1px 1px 1px black;
   font-size: 16px;
@@ -156,4 +156,86 @@ a:hover{
 }
 .cont{
   min-height: calc(100vh - 50px - 88px);
+}
+
+@media (max-width: 1200px) {
+  .columna {
+    background-image: url(../images/arb.jpg);
+    background-size: 200%;
+  }
+  .sec{
+    background-color: black ;
+    background-image: url(../images/camflo2.jpg);
+    background-size: 100% ;
+    color:white;
+    text-shadow: 1px 1px 1px black;
+    font-size: 16px;
+    height: 800px;
+  }
+}
+@media (max-width: 900px) {
+  .columna {
+    background-image: url(../images/arbcel.jpg);
+  }
+  .sec{
+    background-color: black ;
+    background-image: url(../images/camflo2.jpg);
+    background-size: 100% ;
+    color:white;
+    text-shadow: 1px 1px 1px black;
+    font-size: 16px;
+    height: 800px;
+  }
+  .text-me  p{
+    width: 80%;
+    margin-left: 10%;
+
+  }
+  .text-me{
+    margin-top:0px;
+  }
+  .text-me> h2{
+    margin-top:10px;;
+    }
+    .text-me> h2{
+      width: 100%;
+      margin-left: 0px;
+      }
+    .sec> h2{
+      margin-top:5px;
+      text-align: center
+    }
+    .text-me> p{
+      width: 100%;
+      margin-left: 0px;
+      font-size: 16px;
+      margin-top: 2em;
+      }
+    .sec> h1{
+      margin-top:1em;
+      text-align: center
+    }
+    .sec{
+      height: 700px;
+    }
+    .sec> p{
+      width: 100%;
+      margin-left: 0px;
+      font-size: 16px
+    }
+    .columna > h1{
+      margin-top: 350px;
+      width:100%;
+      background-color: rgba(19, 9, 9, 0.527);
+      padding:0px;
+    }
+    .btn{ 
+      font-size: 9px;
+    }
+    th{
+      font-size: 10px;
+    }
+    td{
+      font-size:10px;
+    }
 }
