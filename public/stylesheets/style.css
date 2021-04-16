@@ -19,16 +19,22 @@ a {
 }
 .columna{
   height:850px;
-  color:black;
+  color:aliceblue;
   background-color: black;
-  background-image: url(../images/Sin-título-2.png);
+  background-image: url(../images/arb.jpg);
   background-size: 100%;
   text-align: center;
 }
 .columna > h1{
   margin-top: 600px;
   width:100%;
-  background-color: rgba(255, 255, 255, 0.09);
+  background-color: rgba(19, 9, 9, 0.527);
+  padding:0px;
+}
+.columna > p{
+  width:80%;
+  margin-left:10%;
+  background-color: rgba(19, 9, 9, 0.787);
   padding:0px;
 }
 .blu{
@@ -63,7 +69,7 @@ a:hover{
 }
 .sec{
   background-color: black ;
-  background-image: url(../images/uno.jpg);
+  background-image: url(../images/camflo1.jpg);
   background-size: 100% ;
   color:white;
   text-shadow: 1px 1px 1px black;

@@ -4,7 +4,7 @@ const { EMAIL_ADMIN, PASS_ADMIN}= process.env;
 
 const transporter = nodemailer.createTransport({ 
     host:'smtp.gmail.com',
-    service: 'gmail',
+    service: 'juanlopez130896@gmail.com',
     port: 587,
     secure: false,
     auth:{
@@ -45,7 +45,7 @@ const comments = async(obj) =>{
         </html>`;
 
         const info = await genericEmail({ 
-            mail: obj.email,
+            email: obj.email,
             subject: subject,
             template: htmlTemplate
          });

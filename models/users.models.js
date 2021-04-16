@@ -99,7 +99,9 @@ const updateUser = async(id, obj)=> {
         const query=`
         UPDATE
             ${DB_T_CONTACTO}
-        SET email = ?,password = ?, role = ?
+        SET email = ?,
+        password = ?,
+        role = ?
         WHERE id_user = ? AND available = 1
         `;
         return await pool.query(query, [obj.email, obj.password, obj.role, id]);
