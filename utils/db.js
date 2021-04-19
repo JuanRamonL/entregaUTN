@@ -2,7 +2,7 @@
 const mysql = require("mysql");
 const util = require("util");
 
-const pool = mysql.createConnection('mysql://bdc83fe0a17e9d:e6f1c4f5@us-cdbr-east-03.cleardb.com/heroku_b29b773123769bc?reconnect=true');
+const pool = mysql.createConnection('mysql://bdaa226bdf9e10:c3e50ca1@us-cdbr-east-03.cleardb.com/heroku_4831284e22cb3e4?reconnect=true');
 
 pool.query = util.promisify(pool.query);
 
